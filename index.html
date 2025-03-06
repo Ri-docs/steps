@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="dark"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Instruction Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-6">
+      <h1 class="text-3xl font-bold mb-8">Instruction Guide</h1>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">1. Create a new form.</h2>
+        <img
+          src="image.png"
+          alt="Create a new form"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          2. Add a new form item by placing mouse under description
+        </h2>
+        <img
+          src="image-1.png"
+          alt="Add new form item"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">3. Use an input field</h2>
+        <img
+          src="image-2.png"
+          alt="Use an input field"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">4. Give it a name and ID</h2>
+        <img
+          src="image-3.png"
+          alt="Give it a name and ID"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          5. While in edit mode, Mouse over the line connecting to the next
+          Action to add a new Action
+        </h2>
+        <img
+          src="image-4.png"
+          alt="Add a new Action"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          6. In the Visibility Per Step tab Set the Start Action field to
+          <code class="bg-gray-800 p-1 rounded">hidden</code>
+        </h2>
+        <img
+          src="image-8.png"
+          alt="Visibility Per Step tab"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          7. You will need to use the Connect (Advanced Action)
+        </h2>
+        <img
+          src="image-5.png"
+          alt="Connect (Advanced Action)"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          8. Fill out the action with these settings
+        </h2>
+        <img
+          src="image-6.png"
+          alt="Fill out the action"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg mb-4"
+        />
+        <p class="mb-4">- The key value pairs I used are:</p>
+        <pre
+          class="bg-gray-800 p-4 rounded overflow-x-auto mb-4"
+        ><code>expires='%{request.customExpirationPeriod}'
+defaultExpires={"years": 1}</code></pre>
+        <blockquote class="border-l-4 border-gray-700 pl-4 italic mb-4">
+          Note: The defaultExpires field should match the expiration you put on
+          the entitlement when you created it. You can place more or less time
+          like so:
+        </blockquote>
+        <pre
+          class="bg-gray-800 p-4 rounded overflow-x-auto"
+        ><code>defaultExpires={"years": 1, "months: 10", "weeks": 2, "days": 7, "hours": 10, "minutes": 30}</code></pre>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          9. You will need another Action (Update Form) added after the Connect
+          Action
+        </h2>
+        <img
+          src="image-7.png"
+          alt="Update Form Action"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          10. Upload the action set into connect
+        </h2>
+        <img
+          src="image-9.png"
+          alt="Upload the action set"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          11. If you want to change how the date is formatted, you can adjust
+          that in the Action Set
+        </h2>
+        <img
+          src="image-10.png"
+          alt="Change date formatting"
+          class="w-full max-w-md mx-auto rounded-lg shadow-lg mb-4"
+        />
+        <blockquote class="border-l-4 border-gray-700 pl-4 italic">
+          It uses Java 8 formatting codes.
+        </blockquote>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          12. Test a user and ensure you can see the Expiration populate in the
+          approval step.
+        </h2>
+      </section>
+    </div>
+  </body>
+</html>
