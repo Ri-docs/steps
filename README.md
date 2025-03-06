@@ -34,7 +34,7 @@ defaultExpires={"years": 1, "months: 10", "weeks": 2, "days": 7, "hours": 10, "m
 
 ## 9. You will need another Action (Update Form) added after the Connect Action
 ![alt text](image-7.png)
-
+![alt text](image-11.png)
 ## 10. Upload the action set into connect
 ![](image-9.png)
 
